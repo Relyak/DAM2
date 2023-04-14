@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        Notas = new Array()
+        Notas["asignatura"]
+        Notas["nota"]
+        
+        media=0
+    
+        var almacen1,almacen2
+
+        for(let i=0;i<2;i++){
+          almacen1=window.prompt("dime la asignatura")
+          almacen2=parseFloat(window.prompt("dime la nota"))
+          Notas["asignatura"]=almacen1
+          Notas["nota"]=parseFloat(almacen2)
+            media=media+almacen2
+            Notas[i]=almacen1+" "+almacen2
+            
+        }
+        media=media/Notas.length
+        for(let y=0;y<Notas.length;y++){
+            document.writeln(Notas[y]+"<br>")
+        }
+        
+        document.writeln("<br> Tu media es "+media)
+
+
+
+        const alumno = {
+            nombre : prompt("nombre"),
+            apellido:prompt("apellido"),
+            edad:prompt("edad"),
+            susNotas: Notas
+        }    
+        @Override
+        
+
+
+
+        const objetoString= JSON.stringify(alumno)
+        document.write("<br/>"+objetoString)
+        //document.writeln("<br>"+alumno.susNotas)
+        /*
+        do{
+            nota=0
+            
+            do{
+                nota=parseInt(window.prompt("dime la nota"))
+            if(isNaN(nota)){
+                alert("La has liado en un numero")
+                
+                
+            }else {
+                    if((nota>0&&nota<10)){
+                    media=media+nota
+                    document.writeln(nota)
+                    i++
+                    }
+                }
+            
+            }while(nota<1||nota>10)
+       }while(i<6)
+       function calcMedia(media){
+        return media/6
+       }
+       final= parseInt(calcMedia(media))
+       switch(final){
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        document.writeln("\nTu media es de "+final+" suspenso")
+        break
+        case 5:
+        case 6:
+        document.write("\nTu media es de "+final+" aprobado")
+        break
+        case 7:
+        case 8:
+        document.write("\nTu media es de "+final+" notable")
+        break
+        case 9:
+        case 10:
+        document.write("\nTu media es de "+final+" sobresaliente")
+        break
+       }
+       */ 
+            
+
+    </script>
+</body>
+</html>

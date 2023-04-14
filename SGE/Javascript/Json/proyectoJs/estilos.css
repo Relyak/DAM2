@@ -1,0 +1,22 @@
+body{
+    background-color: 
+
+    #69bbea;
+}
+
+.general{
+        width: 1200px;
+        height: 100%;
+        margin:3%;
+        padding: 3%;
+        background-image: url(fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; 
+}
+input{
+    display: block;
+    margin-top: 20px;
+   
+    border-radius: 10px;
+}

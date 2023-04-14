@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const Pepe = {
+        "nombre": "rocas",
+        "edad": "21",
+        "sexo": "lobster",
+        "direccion": {
+            "calle": "la calle esta del insti",
+            "localidad": "madris",
+            "puerta": "la principal",
+            "Cp": 28019
+        },
+        "asignatura": [
+            {
+                "nombre": "sge",
+                "curso": "dam2",
+                "horas": 5
+            },
+            {
+                "nombre": "sge2",
+                "curso": "dam2",
+                "horas": 5
+            }
+        ],
+        "telefonos": [
+            6611123,
+            2231123,
+            2331232,
+            2221123
+        ],
+        "centros": [
+            {
+                "nombre": "er juar de la cierrva",
+                "localidad": "madri"
+            },
+            {
+                "nombre": "er insti de ar lado",
+                "localidad": "la lleca"
+            }
+        ],
+        "coche": false,
+        "amigos": [
+
+            {
+                "nombre": "Pedro1",
+                "edad": 23,
+                "equipo de futbol": "er betis",
+                "trabaja": false,
+                "telefono": 666522123,
+                "estudios": {
+                    "fam_pro": "no tiene la eso",
+                    "nivel": "ni primaria",
+                    "lugar": "er barrio"
+                }
+            },
+            {
+                "nombre": "Pedro2",
+                "edad": 23,
+                "equipo de futbol": "er betis",
+                "trabaja": false,
+                "telefono": 666522123,
+                "estudios": {
+                    "fam_pro": "no tiene la eso",
+                    "nivel": "ni primaria",
+                    "lugar": "er barrio"
+                }
+            },
+            {
+                "nombre": "Pedro3",
+                "edad": 23,
+                "equipo de futbol": "er betis",
+                "trabaja": false,
+                "telefono": 666522123,
+                "estudios": {
+                    "fam_pro": "no tiene la eso",
+                    "nivel": "ni primaria",
+                    "lugar": "er barrio"
+                }
+            }
+
+
+
+        ]
+    }
+    //borra el primero
+    Pepe.amigos.shift()
+    //borra el ultimo
+    Pepe.amigos.pop()
+    //añade al principio
+    Pepe.amigos.unshift(
+        {
+            "nombre": "Pedro4",
+            "edad": 23,
+            "equipo de futbol": "er betis",
+            "trabaja": false,
+            "telefono": 666522123,
+            "estudios": {
+                "fam_pro": "no tiene la eso",
+                "nivel": "ni primaria",
+                "lugar": "er barrio"
+            }
+        }
+    )
+    //añade al final
+    Pepe.amigos.push({
+        "nombre": "Pedro5",
+        "edad": 23,
+        "equipo de futbol": "er betis",
+        "trabaja": false,
+        "telefono": 666522123,
+        "estudios": {
+            "fam_pro": "no tiene la eso",
+            "nivel": "ni primaria",
+            "lugar": "er barrio"
+        }
+    }
+    )
+    console.log(Pepe)
+
+
+
+</script>
+
+</html>

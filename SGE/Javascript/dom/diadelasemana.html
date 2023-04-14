@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        dia=window.prompt("dia de la semana").toLowerCase()
+    switch(dia){
+        case "sabado":
+        case "domingo":
+        document.writeln("fin de semana")
+        break
+        case "lunes":
+        case "martes":
+        case "miercoles":
+        case "jueves":
+        case "viernes":
+        document.writeln("no fin de semana")
+        break
+        default: 
+        document.writeln("no es un dia de la semana")
+        break
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch GreetingClient",
+            "request": "launch",
+            "mainClass": "ServidorUdp.BROADCAST.GreetingClient",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch GreetingServer",
+            "request": "launch",
+            "mainClass": "ServidorUdp.BROADCAST.GreetingServer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch HttpServer",
+            "request": "launch",
+            "mainClass": "Repaso.DamHttpServer.HttpServer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CreaYCompruebaHash",
+            "request": "launch",
+            "mainClass": "Repaso.Hash.CreaYCompruebaHash",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteUdp",
+            "request": "launch",
+            "mainClass": "Repaso.Udp.ClienteUdp",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorUdp",
+            "request": "launch",
+            "mainClass": "Repaso.Udp.ServidorUdp",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraTcpCli",
+            "request": "launch",
+            "mainClass": "Repaso.calculadoraTcp.CalculadoraTcpCli",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraTcpSer",
+            "request": "launch",
+            "mainClass": "Repaso.calculadoraTcp.CalculadoraTcpSer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraUdpCli",
+            "request": "launch",
+            "mainClass": "Repaso.calculadoraUdp.CalculadoraUdpCli",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraUdpSer",
+            "request": "launch",
+            "mainClass": "Repaso.calculadoraUdp.CalculadoraUdpSer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoCesar",
+            "request": "launch",
+            "mainClass": "Repaso.cifradoCesarPro.CifradoCesar",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoCesarPlusPlus",
+            "request": "launch",
+            "mainClass": "Repaso.cifradoCesarPro.CifradoCesarPlusPlus",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoCliente",
+            "request": "launch",
+            "mainClass": "Repaso.cifradoCesarPro.CifradoCliente",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CifradoServidor",
+            "request": "launch",
+            "mainClass": "Repaso.cifradoCesarPro.CifradoServidor",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch DescifradoCesarPlusPlus",
+            "request": "launch",
+            "mainClass": "Repaso.cifradoCesarPro.DescifradoCesarPlusPlus",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimoTcpCli",
+            "request": "launch",
+            "mainClass": "Repaso.primosTcp.PrimoTcpCli",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimoTcpSer",
+            "request": "launch",
+            "mainClass": "Repaso.primosTcp.PrimoTcpSer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimoUdpCli",
+            "request": "launch",
+            "mainClass": "Repaso.primosUdp.PrimoUdpCli",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimoUdpSer",
+            "request": "launch",
+            "mainClass": "Repaso.primosUdp.PrimoUdpSer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TcpCliente",
+            "request": "launch",
+            "mainClass": "Repaso.tcp_multi_p2p.TcpCliente",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TcpServidor",
+            "request": "launch",
+            "mainClass": "Repaso.tcp_multi_p2p.TcpServidor",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch AhorcadoServer",
+            "request": "launch",
+            "mainClass": "ServidorTCP.Ahorcado.AhorcadoServer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cliente",
+            "request": "launch",
+            "mainClass": "ServidorTCP.Ahorcado.Cliente",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TCPClient",
+            "request": "launch",
+            "mainClass": "ServidorTCP.Basico.TCPClient",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TCPServer",
+            "request": "launch",
+            "mainClass": "ServidorTCP.Basico.TCPServer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TCPClient(1)",
+            "request": "launch",
+            "mainClass": "ServidorTCP.MultiHilo.TCPClient",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TCPServerMulti",
+            "request": "launch",
+            "mainClass": "ServidorTCP.MultiHilo.TCPServerMulti",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TCPServerUnCliente",
+            "request": "launch",
+            "mainClass": "ServidorTCP.MultiHilo.TCPServerUnCliente",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploCliente",
+            "request": "launch",
+            "mainClass": "ServidorUdp.BROADCAST.EjemploCliente",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorBroad",
+            "request": "launch",
+            "mainClass": "ServidorUdp.BROADCAST.ServidorBroad",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch UDPServer",
+            "request": "launch",
+            "mainClass": "ServidorUdp.ChatGPTUDP.UDPServer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChatServer",
+            "request": "launch",
+            "mainClass": "ServidorUdp.ChatUDPNoMulti.ChatServer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch UDPMulticastClient",
+            "request": "launch",
+            "mainClass": "ServidorUdp.MULTICAST.UDPMulticastClient",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch UDPMulticastServer",
+            "request": "launch",
+            "mainClass": "ServidorUdp.MULTICAST.UDPMulticastServer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch MulticastSend",
+            "request": "launch",
+            "mainClass": "ServidorUdp.MULTICASTPROFE.MulticastSend",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploCliente(1)",
+            "request": "launch",
+            "mainClass": "ServidorUdp.P2P.EjemploCliente",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploServidor",
+            "request": "launch",
+            "mainClass": "ServidorUdp.P2P.EjemploServidor",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteTCP",
+            "request": "launch",
+            "mainClass": "Tcp.EjemplosTCP.ClienteTCP",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Server",
+            "request": "launch",
+            "mainClass": "Tcp.EjemplosTCP.Server",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cliente(1)",
+            "request": "launch",
+            "mainClass": "Tcp.EjemplosTCPMultithread.Cliente",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Servidor",
+            "request": "launch",
+            "mainClass": "Tcp.EjemplosTCPMultithread.Servidor",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaitNotifyTest",
+            "request": "launch",
+            "mainClass": "WaitNotifyTest",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Colisión",
+            "request": "launch",
+            "mainClass": "básicos.Colisión",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConAnimación",
+            "request": "launch",
+            "mainClass": "básicos.ConAnimación",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConAnimaciónConTimer",
+            "request": "launch",
+            "mainClass": "básicos.ConAnimaciónConTimer",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConImagen",
+            "request": "launch",
+            "mainClass": "básicos.ConImagen",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConSonido",
+            "request": "launch",
+            "mainClass": "básicos.ConSonido",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Movimiento",
+            "request": "launch",
+            "mainClass": "básicos.Movimiento",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch VariosJFramePrefabricados",
+            "request": "launch",
+            "mainClass": "básicos.VariosJFramePrefabricados",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClienteJuego",
+            "request": "launch",
+            "mainClass": "ejemploAhorcado.ClienteJuego",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServidorJuego",
+            "request": "launch",
+            "mainClass": "ejemploAhorcado.ServidorJuego",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejemplox",
+            "request": "launch",
+            "mainClass": "ejemplox.ejemplox",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ColisiónConcolisionador",
+            "request": "launch",
+            "mainClass": "medio.ColisiónConcolisionador",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch FísicaConMovimiento",
+            "request": "launch",
+            "mainClass": "medio.FísicaConMovimiento",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sonidos",
+            "request": "launch",
+            "mainClass": "medio.Sonidos",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploDB",
+            "request": "launch",
+            "mainClass": "otros.EjemploDB",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploDiccionario",
+            "request": "launch",
+            "mainClass": "otros.EjemploDiccionario",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Examen1",
+            "request": "launch",
+            "mainClass": "otros.Examen1",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Examen2",
+            "request": "launch",
+            "mainClass": "otros.Examen2",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Examen3",
+            "request": "launch",
+            "mainClass": "otros.Examen3",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExamenExtraordinario",
+            "request": "launch",
+            "mainClass": "otros.ExamenExtraordinario",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExamenOrdinario",
+            "request": "launch",
+            "mainClass": "otros.ExamenOrdinario",
+            "projectName": "PSPjava_ea8341e7"
+        },
+        {
+            "type": "java",
+            "name": "Launch cifrado",
+            "request": "launch",
+            "mainClass": "cifradoCesar.cifrado",
+            "projectName": "ejemplo_mensajeria"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "correo.App",
+            "projectName": "ejemplo_mensajeria"
+        },
+        {
+            "type": "java",
+            "name": "Launch SSLCookieBakery",
+            "request": "launch",
+            "mainClass": "correo.SSLCookieBakery",
+            "projectName": "ejemplo_mensajeria"
+        },
+        {
+            "type": "java",
+            "name": "Launch CorreoCuadrado",
+            "request": "launch",
+            "mainClass": "correoCuadrado.CorreoCuadrado",
+            "projectName": "ejemplo_mensajeria"
+        },
+        {
+            "type": "java",
+            "name": "Launch CorreoH1",
+            "request": "launch",
+            "mainClass": "correoH1.CorreoH1",
+            "projectName": "ejemplo_mensajeria"
+        },
+        {
+            "type": "java",
+            "name": "Launch DnsDinamico",
+            "request": "launch",
+            "mainClass": "html.DnsDinamico",
+            "projectName": "ejemplo_mensajeria"
+        }
+    ]
+}

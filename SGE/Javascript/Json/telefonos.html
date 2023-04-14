@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text_pais">
+        Código pais: <input type="text" id="pais" placeholder="Ejemplo ES">
+    </p>
+    <p id="text_numero">
+        Número a comprobar: <input type="text" id="tel" placeholder="666222111">
+    </p>
+   
+    <input type="button" name="GO!" id="boton" value="GO!">
+
+    <div>
+    <b>Número internacional:</b><p id="cod_internacional"></p>
+    </div>
+    <div>
+    <b>Operador </b><p id="operador"></p>
+    </div>
+    <div>
+       <b> Tipo de número </b> <p id="tipo"></p>
+    </div>
+    <div>
+    <b> Zona</b>  <p id="zona"></p>
+    </div>
+    <div>
+        <b> Localización</b>  <p id="localizacion"></p>
+        </div>
+
+</body>
+
+<script>
+
+
+/*
+PUEDO USAR ESO PARA HACER FETCH(URL,options) pero no se actualiza ya que no se actualiza el telefono/pais por estar fuera de una funcion
+let numero=document.getElementById("tel").value
+let pais=document.getElementById("pais").value
+let url='https://phonenumbervalidatefree.p.rapidapi.com/ts_PhoneNumberValidateTest.jsp?number='+numero+"&country="+pais
+*/
+document.getElementById("boton").addEventListener("click",comprobarNumero,false);
+
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'c606ce6ba3msh9755e4191b9cfd6p1dbd6djsn9abf342fd38b',
+		'X-RapidAPI-Host': 'phonenumbervalidatefree.p.rapidapi.com'
+	}
+};
+function comprobarNumero(){
+    paisMayus=document.getElementById("pais").value.toUpperCase()
+    datos_telefono=document.getElementById("tel").value
+
+    url='https://phonenumbervalidatefree.p.rapidapi.com/ts_PhoneNumberValidateTest.jsp?number='+
+    datos_telefono+
+    "&country="+
+    paisMayus;
+
+    fetch('https://phonenumbervalidatefree.p.rapidapi.com/ts_PhoneNumberValidateTest.jsp?number='+
+    url, options)
+	.then(response => response.json())
+	.then(datos =>{
+        console.log(datos)
+        formInt=""
+        for (i=0;i<datos.E164Format.length;i++){
+            formInt+=datos.E164Format[i];
+                }
+                document.getElementById("cod_internacional").innerHTML=formInt;
+        ope=""
+        for (i=0;i<datos.carrier.length;i++){
+            ope+=datos.carrier[i];
+                }
+                document.getElementById("operador").innerHTML=ope;
+        tip=""
+        for (i=0;i<datos.numberType.length;i++){
+            tip+=datos.numberType[i];
+                }
+                document.getElementById("tipo").innerHTML=tip;
+        zon=""
+        for (i=0;i<datos.timeZone_s.length;i++){
+            zon+=datos.timeZone_s[i];
+                }
+                document.getElementById("zona").innerHTML=zon;
+        loc=""
+        for (i=0;i<datos.location.length;i++){
+            loc+=datos.location[i];
+                }
+            document.getElementById("localizacion").innerHTML=loc;
+                /* Como es un array de 1 se puede hacer así
+        document.getElementById("cod_internacional").innerHTML=datos.E164Format
+        document.getElementById("operador").innerHTML=datos.carrier
+        document.getElementById("tipo").innerHTML=datos.numberType
+        document.getElementById("zona").innerHTML=datos.timeZone_s
+        document.getElementById("localizacion").innerHTML=datos.location*/
+    
+    
+    }
+
+
+
+
+
+
+  
+    
+    
+    ).catch(err => console.error(err));
+}
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>x</p><input type="text" name="equis" id="x">
+   <p>y</p><input type="text" name="i_griega" id="y">
+    <br>
+   <input type="checkbox" id="resize1">resizeTo
+   <br>
+   <input type="checkbox" id="move1" >moveTo
+   <br>
+   <input type="checkbox" id="resize2">resizeBy
+   <br>
+   <input type="checkbox"  id="move2" >moveBy
+    <br><br><br>
+    <input type="button" value="GO!" id="boton">
+    
+    
+    <script>
+        document.getElementById('boton').addEventListener("click",hacer,false);
+        width=document.getElementById("x").value
+        height=document.getElementById("y").value
+        ventana=window.open("","","width=200, height=100")
+        function hacer(){
+            if(document.getElementById("resize1").checked){
+               
+                ventana.resizeTo(width,height)
+            }
+            else if (document.getElementById("move1").checked){
+               
+                ventana.moveTo(width,height)
+            }
+            else if (document.getElementById("resize2").checked){
+                
+                ventana.resizeBy(width,height)
+            }
+            else if (document.getElementById("move2").checked){
+               
+                ventana.moveBy(width,height)
+            }
+
+        }
+    </script>
+</body>
+</html>

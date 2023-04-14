@@ -1,0 +1,25 @@
+[{
+    "nombre":"juan",
+    "apellido":"sanchez",
+    "edad":"19",
+    "coches":[{"modelo":"bmw",
+            "marca":"beemeuve"},{"modelo":"moto",
+            "marca":"vespita"}],
+    "centros":[{"nombre":"juan de la sierva con s"},{"nombre":"juan de la cierva con c"}],
+    "asignaturas":[{"nombre":"ingles",
+    "Numhoras":"19","nota":"9"},{"nombre":"lengua",
+    "Numhoras":"290","nota":"3"},{"nombre":"PMDM",
+    "Numhoras":"29","nota":"5"}],
+    "amigos":[{"nombre":"sergios",
+    "edad":"19"},{"nombre":"javier",
+    "edad":"jajajaja"},{"nombre":"chemita",
+    "edad":"veinte mas uno"}]
+    },{
+    "nombre":"josé",
+    "apellido":"manito",
+    "coches":[{"modelo":"carro",
+            "marca":"289"}],
+    "amigos":[{"nombre":"chemita",
+    "edad":"19"},{"nombre":"er chema",
+    "edad":"jajajaja"}]
+    }]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Introduce tu texto</p><input type="text" id="nombre">
+    <div id="lista" ></div>
+    <br>
+    <input type="radio" name="opciones" id="addFirst">AddFirst
+    <input type="radio" name="opciones" id="addLast">AddLast
+    <input type="radio" name="opciones" id="RemoveFirst">RemoveFirst
+    <input type="radio" name="opciones" id="RemoveLast">RemoveLast
+    <input type="radio" name="opciones" id="ReplaceFirst">ReplaceFirst
+    <input type="radio" name="opciones" id="ReplaceLast">ReplaceLast
+    <input type="button" value="GO!" id="boton">
+
+    <script>
+        document.getElementById("boton").addEventListener("click",ejecucion,false)
+       
+        function ejecucion(){
+            var listas =document.createElement('li')   ;  
+            var texto= document.getElementById("nombre").value   ;
+            
+            listas.innerHTML=texto;
+            switch(document.querySelector('input[name="opciones"]:checked').id){
+                case "addFirst":
+                AddFirst();
+                
+                break;
+                case "addLast": 
+                AddLast();
+                break;
+                case "RemoveFirst": 
+                RemoveFirst();
+                break;
+                case "RemoveLast": 
+                RemoveLast();
+                break;
+                case "ReplaceFirst":
+                ReplaceFirst();
+                break;
+                case "ReplaceLast":
+                ReplaceLast();
+                break;
+
+
+            }
+            function AddFirst(){
+                document.getElementById('lista').prepend(listas); 
+            }
+            function AddLast(){
+                document.getElementById('lista').appendChild(listas); 
+            }
+            function RemoveFirst(){
+                document.getElementById('lista').removeChild(document.getElementById('lista').firstChild);
+            }
+            function RemoveLast(){
+                document.getElementById('lista').removeChild(document.getElementById('lista').lastChild);
+            }
+            function ReplaceFirst(){
+                document.getElementById('lista').replaceChild(listas,document.getElementById('lista').firstChild);
+            }
+            function ReplaceLast(){
+                document.getElementById('lista').replaceChild(listas,document.getElementById('lista').lastChild);
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

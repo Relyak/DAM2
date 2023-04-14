@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Suma">add</string>
+    <string name="resta">substract</string>
+    <string name="divide">divide</string>
+    <string name="multi">multiply</string>
+    <string name="calcular">calculate</string>
+    <string name="volver">back</string>
+    <string name="reset">reset</string>
+    <string name="resultado">result</string>
+    <string name="app_names">englishapp</string>
+</resources>

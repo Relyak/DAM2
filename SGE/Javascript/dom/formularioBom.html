@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiomas Formulario</title>
+</head>
+<body>
+    <h2 id="h1cuenta">Crear cuenta</h2>
+    <input style="width:250px;height:35px;" id="entrarGoogle" type="button" value="Entrar con Google"/>
+    <p style="font-weight: bold;">------------------------- O bien -------------------------</p><br>
+    <input id="nombre" style="width:250px;height:35px;font-size:15px;margin-bottom: 30px;" type="text" placeholder="Nombre"/><br>
+    <input id="email" style="width:250px;height:35px;font-size:15px;margin-bottom: 30px;" type="text" placeholder="E-mail*"/><br>
+    <input id="contraseña" style="width:250px;height:35px;font-size:15px;margin-bottom: 30px;" type="text" placeholder="Contraseña*"/><br>
+    <input id="repetirContraseña" style="width:250px;height:35px;font-size:15px;margin-bottom: 30px;" type="text" placeholder="Repetir contraseña*"/><br>
+    <input id="leidoCondiciones" style="margin-bottom: 30px;" type="checkbox"/><label>He leído y acepto la política de privacidad</label><br>
+    <input id="recibirDescuentos" style="margin-bottom: 30px;" type="checkbox"/><label>Recibir descuentos exclusivos, novades y tendencias por e-mail. Me puedo dar de baja desde mi panel</label><br>
+    <input style="width:250px;height:35px;text-align: center;" id="crearCuenta" type="button" value="Crear cuenta"/>
+    <p id="yaCuenta" style="font-weight: bold;">------------------------- Ya tengo una cuenta -------------------------</p><br>
+    <input id="entraGoogle"  style="width:250px;height:35px;" id="entrarGoogle" type="button" value="Iniciar sesión"/>
+    <input style="width:250px;height:35px;background-image:url(https://img.freepik.com/fotos-premium/bandera-lgbt-comunidad-lesbica-gay-bisexual-transgenero_102583-3212.jpg?w=996);size-adjust: center;" type="button" id="cambiar Ingles">
+    <script>
+
+        
+
+        console.log(navigator.language);
+        window.onload=lenguaje();
+        
+        function lenguaje() {
+            var p = document.getElementsByTagName('p');
+            var label1 = document.getElementsByTagName('label');
+            var buttons = document.getElementsByTagName('input');
+           
+            if (navigator.language=="en-US") {
+                document.getElementById('h1cuenta').innerHTML="Create Account";
+                p[0].innerHTML="------------------------- Or well -------------------------";
+                p[1].innerHTML="------------------------- I have an Acount -------------------------";
+                buttons[0].value="Enter with Google";
+                buttons[1].placeholder="Name";
+                buttons[2].placeholder="Email en Ingles XD";
+                buttons[3].placeholder="Password";
+                buttons[4].placeholder="Repeat Password";
+                label1[0].innerHTML="I have read and accept the privacy policy";
+                label1[1].innerHTML="Receive exclusive discounts, innovations and trends by e-mail. I can unsubscribe from my panel";
+                buttons[7].value="Create Account";
+                buttons[8].value="Log In";
+            }
+            
+
+
+        }
+
+    </script>
+
+
+</body>
+</html>

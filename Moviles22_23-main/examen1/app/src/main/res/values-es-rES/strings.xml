@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_names">examen espanol</string>
+    <string name="Suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="divide">Divide</string>
+    <string name="multi">Multi</string>
+    <string name="calcular">Calcular</string>
+    <string name="volver">Volver</string>
+    <string name="reset">Reset</string>
+    <string name="resultado">Resultado</string>
+
+</resources>

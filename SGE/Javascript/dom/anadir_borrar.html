@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <input type="radio" name="foto" id="gato">GATO
+    <input type="radio" name="foto" id="perro">PERRO
+    <input type="radio" name="foto" id="loro">LORO
+
+    <input type="button" value="Andir" id="andir">
+    <input type="button" value="Borrar" id="borrar">
+    <p></p>
+
+    <script>
+        document.getElementById("andir").addEventListener('click', AnadirWiki, false);
+        document.getElementById("borrar").addEventListener('click', borrarImagen, false);
+
+
+        function Anadir() {
+            const cuerpo = document.createElement('p');
+            var tags = document.getElementsByTagName('input')[0].value;
+            const text = document.createTextNode(tags);
+            cuerpo.appendChild(text);
+            document.body.appendChild(cuerpo);
+        }
+        function AnadirCat() {
+
+            var image = document.createElement("img")
+            image.src = "Cat03.jpg"
+            document.body.appendChild(image);
+        }
+        function Anadir3Solo() {
+            var elegir = document.getElementsByName("foto")
+            const image = document.getElementsByTagName("img")
+
+            if (elegir[0].checked) {
+                image[0].src = "Cat03.jpg"
+            }
+            if (elegir[1].checked) {
+                image[0].src = "perro.jpg"
+            }
+            if (elegir[2].checked) {
+                image[0].src = "loro.jpg"
+            }
+
+
+            document.body.appendChild(image);
+        }
+        function Anadir3() {
+            var elegir = document.getElementsByName("foto")
+            var image = document.createElement("img")
+
+            if (elegir[0].checked) {
+                image.src = "Cat03.jpg"
+            }
+            if (elegir[1].checked) {
+                image.src = "perro.jpg"
+            }
+            if (elegir[2].checked) {
+                image.src = "loro.jpg"
+            }
+
+
+            document.body.appendChild(image);
+        }
+        function AnadirWiki() {
+            var fotos = new Array();
+            //gatos es la posicion
+            fotos['gatos'] = 'Cat03.jpg';
+            fotos['perro'] = 'perro.jpg';
+            fotos['loro'] = 'loro.jpg';
+            var enlaces = new Array();
+            enlaces['gatos'] = 'https://en.wikipedia.org/wiki/Cat';
+            enlaces['perro'] = 'https://es.wikipedia.org/wiki/Canis_familiaris';
+            enlaces['loro'] = 'https://es.wikipedia.org/wiki/Psittacoidea';
+
+            const imagen = document.createElement('img');
+            const enlace = document.createElement('a');
+            if (document.getElementById('gato').checked) {
+                enlace.href = enlaces['gatos'];
+                enlace.target = "_blank";
+                enlace.appendChild(imagen);
+                imagen.src = fotos['gatos'];
+            } else if (document.getElementById('perro').checked) {
+                enlace.href = enlaces['perro'];
+                enlace.target = "_blank";
+                enlace.appendChild(imagen);
+                imagen.src = fotos['perro'];
+            } else if (document.getElementById('loro').checked) {
+                enlace.href = enlaces['loro'];
+                enlace.target = "_blank";
+                enlace.appendChild(imagen);
+                imagen.src = fotos['loro'];
+            }
+
+            document.body.appendChild(enlace);
+        }
+        function borrarImagen() {
+            var final = document.getElementsByTagName('a').length - 1;
+            document.body.removeChild(document.getElementsByTagName('a')[final]);
+        }
+    </script>
+</body>
+
+</html>

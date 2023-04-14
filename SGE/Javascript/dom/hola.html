@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="morton">introduce tu namae</p> <input type="text" id="namae">
+       
+        <select name="colols" id="colols">
+            <option value="rojo">rojo</option>
+            <option value="azur">azur</option>
+            <option value="verde">velde</option>
+          
+          </select>
+  
+    <input type="button" value="cambial" id="boton">
+
+    
+    <script>
+    //document.getElementById('boton').addEventListener('mouseover',llamar,false)
+    //document.getElementById('namae').addEventListener('blur',llamar,false)
+    document.getElementById('boton').addEventListener('click',CAMBIAR,false)
+    
+      
+    function CAMBIAR(){
+        document.getElementById('morton').innerHTML=document.getElementById('namae').value
+        switch(document.getElementById('colols').value){
+            case "rojo":
+                document.getElementById('morton').style.color="red"    
+                break;
+            case "azur":
+                document.getElementById('morton').style.color="blue"    
+                break;
+            case "verde":
+                document.getElementById('morton').style.color="green"    
+                break;  
+
+        
+                
+        }
+    }
+
+
+
+    /* function red(){
+       document.getElementById('morton').style.color='red'
+       document.getElementById('morton').innerHTML=document.getElementById('namae').value
+       
+    }
+    function llamar(){
+    
+   //document.writeln(document.getElementById('namae').value)
+   
+}*/
+
+</script>
+</body>
+</html>

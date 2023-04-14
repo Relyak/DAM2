@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt">Namae-wa</p><input type="text"> <br>
+    <div class="error"></div>
+    <p id="txt">Aperido-wa</p><input type="text"> <br>
+    <div class="error"></div>
+    <p id="txt">edad-wa</p><input type="number"> <br>
+    <div class="error"></div>
+    <p id="txt">contorasenia-wa</p><input type="password"> <br>
+    <div class="error"></div>
+    Sexo 
+    <select name="sexo">
+        <option value=''></option>
+        <option value="M">M</option>
+        <option value="H">H</option>
+        <option value="NS/NC">NS/NC</option>
+    </select><br>
+    <div class="error"></div>
+    <input type="checkbox"> he leido y acepto todo <br>
+    <div id="cookie"></div>
+    <input type="button" value="Saludal" id="boton">
+    <script>
+  
+        document.getElementById('boton').addEventListener('click',comprobar,false)
+        
+         function comprobar(){
+              tags=document.getElementsByTagName('input')
+              clases=document.getElementsByClassName('error')
+              sexo=document.getElementsByName('sexo')
+              //comprobar el checkbox -2 para que coja el penultimo
+              if(tags[tags.length-2].checked!=true)
+                  document.getElementById('cookie').innerHTML='fartaa argooo!' 
+                  document.getElementById('cookie').style.color='red'
+              
+              for(i=0;i<tags.length-1;i++){
+                  //comprobar los primeros inputs
+                  if(tags[i].value=='')
+                  clases[i].innerHTML='VACIO'
+                  clases[i].style.color='red'
+                  //comprobar el input del select
+                  for(x=0;x<sexo.length;x++){
+                  if(sexo[x].value=='')
+                  clases[clases.length-1].innerHTML='VACIO'
+                  clases[clases.length-1].style.color='red'
+                  }   
+              }
+          }
+          
+      
+          
+          
+  
+      </script>
+  </body>
+  </html>

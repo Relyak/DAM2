@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    
+    <input type="text" name="" id="">Nombre <br>
+
+    <input type="text" name="" id="">Edad <br>
+    
+
+    <input type="text" name="" id="">Furbo? <br>
+    <input type="text" name="" id="">Edad + <br>
+
+
+    <input type="button" value="Saludo" id="boton1"><br>
+    <input type="button" value="edad" id="boton2"><br>
+    <input type="button" value="furbo?" id="boton3"><br>
+
+</body>
+<script>
+   
+   
+    document.getElementById("boton1").addEventListener("click",()=>alert("hola "+document.getElementsByTagName("input")[0].value),false)
+    document.getElementById("boton2").addEventListener("click",()=>alert("Hola tu edad será "+(parseInt(document.getElementsByTagName("input")[1].value)+8)+ " dentro de 8 anos"),false)
+    document.getElementById("boton3").addEventListener("click",()=>alert("Hola "+(document.getElementsByTagName("input")[0].value)+"te gusta "+(document.getElementsByTagName("input")[2].value)),false)
+   
+
+
+
+
+    
+
+</script>
+</html>

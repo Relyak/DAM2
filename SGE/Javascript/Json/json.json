@@ -1,0 +1,9 @@
+{
+    "nombre": "david",
+    "edad": 34,
+    "idiomas": [
+        "eng",
+        "es",
+        "fra"
+    ]
+}

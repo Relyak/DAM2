@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Pokémon<select name="" id="pokemon">
+        <option value=""></option>
+        <option value="pikachu">Pikachu</option>
+        <option value="golduck">Golduck</option>
+        <option value="dragonite">Dragonite</option>
+        <option value="blastoise">Blastoise</option>
+    </select><input type="button" name="Go!" value="Go!" id="boton"></p>
+
+    <p id="textoP">Pokémon2
+        <input type="text" name="" id="pokemon2">
+        <input type="button" value="buscar" name="buscar" id="boton2">
+
+    </p>
+    
+    <div>Nombre<p id="nombre"></p></div> <br><br>
+    <div>Habilidad<p id="habilidad"></p></div> <br><br>
+    <div>Stats<p id="stats"></p></div> <br><br>
+    <div>Tipo<p id="tipo"></p></div> <br><br>
+
+
+</body>
+<script>
+   document.getElementById("boton").addEventListener("click",elegirPokemon,false);
+   document.getElementById("boton2").addEventListener("click",elegirPokemon,false);
+
+    
+     
+      function elegirPokemon(){
+            let textoPe=document.getElementById("textoP").innerHTML
+            fetch('https://pokeapi.co/api/v2/pokemon/'+
+            ((document.getElementById("pokemon").value)||
+            (textoPe=document.getElementById("pokemon2").value)))
+            .then((res)=>res.json())
+            .then((data)=> {
+                console.log(data)
+            document.getElementById("nombre").innerHTML=data.name
+            habilidades=""
+                for (i=0;i<data.abilities.length;i++){
+                habilidades+=data.abilities[i].ability.name+" / "
+                }
+           document.getElementById("habilidad").innerHTML=habilidades
+                stats=""
+                for (i=0;i<data.stats.length;i++){
+                    stats+=data.stats[i].stat.name+" "+data.stats[i].base_stat+" / "
+                    }
+            document.getElementById("stats").innerHTML=stats
+
+                tipos=""
+                for (i=0;i<data.types.length;i++){
+                    tipos+=data.types[i].type.name+" / "
+                    }
+            document.getElementById("tipo").innerHTML=tipos
+
+
+
+            //document.getElementById("habilidad").innerHTML=data.abilities[0].ability.name+" | "+data.abilities[1].ability.name
+            });
+         
+
+
+        }
+
+
+      
+
+
+
+
+</script>
+</html>

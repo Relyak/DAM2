@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="nombre" >
+    <input type="text" value="nombre" ><br>
+        <input type="checkbox" value="Azul" id="">Azul
+        <input type="checkbox" value="Rojo" id="">Roja
+        <input type="checkbox" value="Verde" id="">Verde
+    <input type="button" value="Enviar">
+    </body>
+    <script>
+        inputText= document.getElementsByTagName('input');
+        document.getElementsByTagName('input')[5].addEventListener('click',validar,false);
+        function validar(){
+            for(i=0;i<inputText.length;i++){
+                if(inputText[i].value===("")){
+                    alert("campos vacios")
+                    i--;
+                }
+            }
+            if(inputText[0].value.length<5||inputText[0].length>40){
+                alert("Texto invalido")
+            }
+            if(inputText[2].checked==false&&inputText[3].checked==false&&inputText[4].checked==false){
+                alert("Checkbox Vacio")
+            }
+        }
+    </script>
+</html>

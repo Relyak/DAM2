@@ -1,0 +1,82 @@
+{
+    "nombre": "rocas",
+    "edad": "21",
+    "sexo": "lobster",
+    "direccion": {
+        "calle": "la calle esta del insti",
+        "localidad": "madris",
+        "puerta": "la principal",
+        "Cp": 28019
+    },
+    "asignatura": [
+        {
+            "nombre": "sge",
+            "curso": "dam2",
+            "horas": 5
+        },
+        {
+            "nombre": "sge2",
+            "curso": "dam2",
+            "horas": 5
+        }
+    ],
+    "telefonos": [
+        6611123,
+        2231123,
+        2331232,
+        2221123
+    ],
+    "centros": [
+        {
+            "nombre": "er juar de la cierrva",
+            "localidad": "madri"
+        },
+        {
+            "nombre": "er insti de ar lado",
+            "localidad": "la lleca"
+        }
+    ],
+    "coche": false,
+    "amigos":[
+        
+            {
+                "nombre": "Pedro",
+                "edad": 23,
+                "equipo de futbol": "er betis",
+                "trabaja": false,
+                "telefono": 666522123,
+                "estudios": {
+                    "fam_pro": "no tiene la eso",
+                    "nivel": "ni primaria",
+                    "lugar": "er barrio"
+                }
+            },
+            {
+                "nombre": "Pedro",
+                "edad": 23,
+                "equipo de futbol": "er betis",
+                "trabaja": false,
+                "telefono": 666522123,
+                "estudios": {
+                    "fam_pro": "no tiene la eso",
+                    "nivel": "ni primaria",
+                    "lugar": "er barrio"
+                }
+            },
+            {
+                "nombre": "Pedro",
+                "edad": 23,
+                "equipo de futbol": "er betis",
+                "trabaja": false,
+                "telefono": 666522123,
+                "estudios": {
+                    "fam_pro": "no tiene la eso",
+                    "nivel": "ni primaria",
+                    "lugar": "er barrio"
+                }
+            }
+
+        
+    
+    ]
+}

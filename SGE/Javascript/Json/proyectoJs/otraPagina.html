@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+
+  </head>
+<body class="boder2">
+  <div class="general">
+
+        <br>
+        <table class="table table-success table-striped-columns caption-top" id="tabla">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Salario</th>
+            </tr>
+          </thead>
+        </table>
+        <div class="input">
+            <a href="proyectoEnt.html"><input type="button" class="btn btn-dark" value="Volver" id="volvel"></a></div>
+  </div>
+
+</body>
+    <script>
+        const cors ='https://cors-anywhere.herokuapp.com/'
+        const url =cors+'https://nodejs-mysql-restapi-production-d8bd.up.railway.app/api/employees/';
+        const parsedUrl= new URL(window.location.href)
+        table=document.getElementById("tabla");
+      //con el inner cada vez que doy click creo la tabla 
+      table.innerHTML='<tr><th scope="col">ID</th><th scope="col">Nombre</th><th scope="col">Salario</th></tr>'
+        var ide=parsedUrl.searchParams.get("id");
+
+                fetch(url+ide)
+                .then(res=>res.json())
+                .then((data)=>{     
+                    row=table.insertRow(-1);
+                        cell1 = row.insertCell(0);
+                        cell1.innerHTML=data.id
+                        cell2 = row.insertCell(1);
+                        cell2.innerHTML=data.name;
+                        cell3 = row.insertCell(2);
+                        cell3.innerHTML=data.salary;
+            
+            
+        });
+      
+
+    </script>
+</html>

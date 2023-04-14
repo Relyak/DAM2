@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    tamanoArray=parseInt(window.prompt("Dime el numero de asignaturas"))
+    nombreAsignaturas=new Array();
+    for(i=0;i<tamanoArray;i++){
+        nombreAsignaturas[i]=window.prompt("Dime el nombre de la asignatura");
+    }
+    const Persona= {
+        "nombre":window.prompt("Dime tu namae"),
+        "apellido":window.prompt("Dime tu Apellido"),
+        "edad":parseInt(window.prompt("Dime tu Edad")),
+        "Asignaturas":nombreAsignaturas
+    }
+
+    console.log(Persona)
+
+</script>
+</html>

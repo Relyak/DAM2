@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    const kilos = {
+        "nombre": "david",
+        "edad": 21,
+        "idiomas": [
+            "eng",
+            "es",
+            "fra"
+        ]
+        /*,colores:{
+            "azul":"azul",
+            "rojo":"rojo"
+        }*/
+    }
+    const ejemoplo={
+        "azul":"azul",
+        "rojo":"rojo"
+    }
+    kilosString = JSON.stringify(kilos)
+    console.log(kilosString)
+    console.log(kilos)
+    console.log(JSON.parse(kilosString))
+    console.log(kilos.edad)
+    console.log(`hola soy ${kilos.nombre} y tengo ${kilos.edad} años`)
+   // console.log(`me gusta el color ${kilos.colores.azul}`)
+
+    kilos.colores=ejemoplo
+    console.log(`me gusta el color ${kilos.colores.azul}`)
+
+</script>
+
+</html>
